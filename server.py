@@ -1,4 +1,4 @@
-from client import Player
+#from client import Player
 from os import error
 import socket
 from _thread import *
@@ -23,7 +23,7 @@ print("waiting for a connection, server Started")
 
 def read_pos(str):
     str = str.split(",")
-    return int(str[0], int(str[1]))
+    return int(str[0]), int(str[1])
 
 
 def make_pos(tup):
